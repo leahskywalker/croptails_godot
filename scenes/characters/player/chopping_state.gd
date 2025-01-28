@@ -7,7 +7,7 @@ extends NodeState
 
 func _ready() -> void:
 	hit_component_collision_shape.disabled = true
-	hit_component_collision_shape.position = Vector2(0, 0);
+	hit_component_collision_shape.position = Vector2(0, 0)
 
 func _on_process(_delta : float) -> void:
 	pass
@@ -23,6 +23,7 @@ func _on_next_transitions() -> void:
 
 
 func _on_enter() -> void:
+	player.is_performing_action = true
 	if player.player_direction == Vector2.UP:
 		animated_sprite_2d.play("chopping_back")
 		hit_component_collision_shape.position = Vector2(0, -18)
@@ -37,10 +38,12 @@ func _on_enter() -> void:
 		hit_component_collision_shape.position = Vector2(-9, 0)
 	else:
 		animated_sprite_2d.play("chopping_front")
+		hit_component_collision_shape.position = Vector2(0, 3)
 	
 	hit_component_collision_shape.disabled = false
 
 
 func _on_exit() -> void:
+	player.is_performing_action = false
 	animated_sprite_2d.stop()
 	hit_component_collision_shape.disabled = true
