@@ -1,0 +1,97 @@
+[gd_resource type="Theme" load_steps=18 format=3 uid="uid://iqsgiriuofni"]
+
+[ext_resource type="Texture2D" uid="uid://03q0umksd8sa" path="res://assets/ui/basic_ui_sprites.png" id="1_byg7i"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_toqhg"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4t0i"]
+atlas = SubResource("CompressedTexture2D_toqhg")
+region = Rect2(59, 11, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rj0bj"]
+texture = SubResource("AtlasTexture_e4t0i")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p6255"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8t0l"]
+atlas = SubResource("CompressedTexture2D_p6255")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lmheo"]
+texture = SubResource("AtlasTexture_s8t0l")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0f3op"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hijdc"]
+atlas = SubResource("CompressedTexture2D_0f3op")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x03vx"]
+texture = SubResource("AtlasTexture_hijdc")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5i5qp"]
+atlas = ExtResource("1_byg7i")
+region = Rect2(59, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tmttp"]
+texture = SubResource("AtlasTexture_5i5qp")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_huou1"]
+load_path = "res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1hbpd"]
+atlas = SubResource("CompressedTexture2D_huou1")
+region = Rect2(59, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bnnwk"]
+texture = SubResource("AtlasTexture_1hbpd")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6qxu"]
+atlas = ExtResource("1_byg7i")
+region = Rect2(259, 180, 90, 25)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hhabm"]
+texture = SubResource("AtlasTexture_a6qxu")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_rj0bj")
+Button/styles/focus = SubResource("StyleBoxTexture_lmheo")
+Button/styles/hover = SubResource("StyleBoxTexture_x03vx")
+Button/styles/normal = SubResource("StyleBoxTexture_tmttp")
+Button/styles/pressed = SubResource("StyleBoxTexture_bnnwk")
+CharacterNameText/base_type = &"RichTextLabel"
+CharacterNameText/font_sizes/normal_font_size = 14
+DialogueText/base_type = &"RichTextLabel"
+DialogueText/font_sizes/normal_font_size = 12
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 10
+MarginContainer/constants/margin_right = 10
+MarginContainer/constants/margin_top = 10
+Panel/styles/panel = SubResource("StyleBoxTexture_hhabm")
